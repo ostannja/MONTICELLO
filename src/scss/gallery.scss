@@ -1,0 +1,80 @@
+.grid {
+  padding-top: 10vh;
+  width: 70.22vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    "gallery1 gallery2 gallery3"
+    "gallery1 gallery4 gallery5";
+
+  &__item1 {
+    grid-area: gallery1;
+    max-width: 580px;
+    height: 48vh;
+    @include backgr(url(../img/gallery_pic1.webp));
+    @extend %backgr;
+    &:hover {
+      transform: translateX(-25px);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__item2 {
+    grid-area: gallery2;
+    max-width: 285vw;
+    height: 23vh;
+    @include backgr(url(../img/gallery_pic2.webp));
+    @extend %backgr;
+    &:hover {
+      transform: translateY(-25px);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__item3 {
+    grid-area: gallery3;
+    max-width: 285vw;
+    height: 23vh;
+    @include backgr(url(../img/gallery_pic3.webp));
+    @extend %backgr;
+    &:hover {
+      transform: translateX(25px);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__item4 {
+    grid-area: gallery4;
+    max-width: 285vw;
+    height: 23vh;
+    @include backgr(url(../img/gallery_pic4.webp));
+    @extend %backgr;
+    &:hover {
+      transform: translateY(25px);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__item5 {
+    grid-area: gallery5;
+    max-width: 285vw;
+    height: 23vh;
+    @include backgr(url(../img/gallery_pic5.webp));
+    @extend %backgr;
+    &:hover {
+      transform: translateX(25px);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+}
+
+.button--gallery {
+  @include flex(center, center, row, nowrap);
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}

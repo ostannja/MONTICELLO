@@ -1,0 +1,22 @@
+@media all {
+  .header {
+    &__title {
+      font-size: calc(39px + (41 + 11 * 0.7) *((100vw - 320px) / 1280));
+    }
+
+    &__subtitle {
+      font-size: calc(15px + (3 + 5 * 0.7) *((100vw - 320px) / 1280));
+    }
+  }
+
+  // .card {
+  //   &__text {
+  //     font-size: calc(8px + (8 + 8 * 0.7) *((100vw - 320px) / 1280));
+  //   }
+
+  //   &__title {
+  //     font-size: calc(7px + (13 + 10 * 0.7) *((100vw - 320px) / 1280));
+  //   }
+  // }
+
+}

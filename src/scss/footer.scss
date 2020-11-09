@@ -1,0 +1,31 @@
+.footer {
+  position: relative;
+  width: 100vw;
+  background: url("../img/footer.webp"),
+  linear-gradient(to top, #55b7ff, #7e5aff);
+  background-size: cover;
+  padding-top: 25vh;
+  
+  &__nav {
+    margin: 0 auto;
+    width: 730px / 1600px * 100vw;
+    
+  }
+
+  &__bottom {
+  margin: 3vh auto 0px;
+  padding-bottom: 25vh;
+  width: 740px / 1600px * 100vw;
+  font-family: Gotham;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+span {
+  margin: 0 10px;
+}
+}
